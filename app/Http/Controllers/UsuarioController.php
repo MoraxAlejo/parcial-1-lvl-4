@@ -18,6 +18,11 @@ class UsuarioController extends Controller
         $usuario = Usuario::findOrFail($id);
         return response()->json($usuario);
     }
+
+    public function hola()
+    {
+        return "Debes poner en la url  '/usuarios' para ver la vista completa";
+    }
 }
 
 
